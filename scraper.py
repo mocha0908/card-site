@@ -29,36 +29,49 @@ def main():
     parser.add_argument("--keyword", type=str, required=True)
     parser.add_argument("--output", type=str, default="card_data.csv")
     parser.add_argument("--mode", type=str, default="overwrite")
-    parser.add_argument("--end-page", type=int, default=5)
+    # end-page引数は削除（無限に取るため）
     args = parser.parse_args()
 
-    print(f"🚀 販売データ取得開始: キーワード「{args.keyword}」")
+    print(f"🚀 販売データ取得開始: キーワード「{args.keyword}」 (全ページ取得モード)")
 
     driver = make_driver()
-    # 検索URL (100件表示)
     base_url = f"https://www.cardrush-pokemon.jp/product-list?keyword={args.keyword}&num=100&img=160"
     
     all_cards = []
+    page = 1 # ページカウント開始
 
     try:
-        for page in range(1, args.end_page + 1):
+        while True: # 無限ループ開始
             url = f"{base_url}&page={page}"
             print(f"📄 ページ {page} 取得中...")
             
             driver.get(url)
+            
             try:
-                WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.CLASS_NAME, "item_box"))
+                # 待機時間を少し長めに確保
+                WebDriverWait(driver, 15).until(
+                    EC.presence_of_element_located((By.ID, "itemList"))
                 )
+                
+                # スクロールして画像読み込みを誘発
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(3) 
+                
             except:
-                print("⚠ 読み込みタイムアウト、または商品なし")
-                break
+                print("⚠ 読み込みタイムアウト（または商品なし）")
 
             soup = BeautifulSoup(driver.page_source, "html.parser")
-            items = soup.find_all("div", class_="item_box")
             
+            # 商品リストを取得
+            result_area = soup.find("div", id="itemList")
+            if result_area:
+                items = result_area.find_all("div", class_="item_box")
+            else:
+                items = soup.find_all("div", class_="item_box")
+            
+            # ★終了条件：商品が1つもなければ終了
             if not items:
-                print("✅ 商品がこれ以上ないため終了")
+                print("✅ 商品がなくなったため、次のキーワードへ進みます。")
                 break
                 
             print(f"➡ {len(items)} 件取得")
@@ -82,13 +95,15 @@ def main():
 
                 all_cards.append([name, price, img_url, link_url])
             
+            # 次のページへ
+            page += 1
             time.sleep(random.uniform(2, 4))
 
     finally:
         if driver:
             driver.quit()
 
-    # CSV保存処理
+    # CSV保存
     write_mode = "w" if args.mode == "overwrite" else "a"
     file_exists = os.path.isfile(args.output)
 
@@ -99,7 +114,7 @@ def main():
         
         writer.writerows(all_cards)
 
-    print(f"🎉 保存完了: {args.output} ({len(all_cards)}件)")
+    print(f"🎉 保存完了: {args.output} (合計 {len(all_cards)} 件)")
 
 if __name__ == "__main__":
     main()
