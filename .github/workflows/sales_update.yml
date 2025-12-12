@@ -1,0 +1,41 @@
+name: Sales Data Update (09:00 JST)
+
+on:
+  schedule:
+    # 日本時間 09:00 -> UTC 00:00
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-sales:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      
+      - name: Run Sales Scraper
+        run: |
+          # AR (上書き)
+          python scraper.py --mode search --keyword "AR" --output card_data.csv --csv-mode overwrite --all-pages --headful
+          # 以下、追記モード
+          python scraper.py --mode search --keyword "CHR" --output card_data.csv --csv-mode append --all-pages --headful
+          python scraper.py --mode search --keyword "SAR" --output card_data.csv --csv-mode append --all-pages --headful
+          python scraper.py --mode search --keyword "SR" --output card_data.csv --csv-mode append --all-pages --headful
+          python scraper.py --mode search --keyword "HR" --output card_data.csv --csv-mode append --all-pages --headful
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add card_data.csv
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 自動更新: 販売データ (09:00 JST)"
+            git pull --rebase
+            git push
+          fi
