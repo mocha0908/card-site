@@ -1,6 +1,5 @@
 selenium
 webdriver-manager
 beautifulsoup4
-pandas
-streamlit
-curl_cffi
+requests
+curl-cffi
