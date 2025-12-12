@@ -18,14 +18,15 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: Run Sales Scraper
+        # ヘッドレスモードで実行（--headful を削除）
         run: |
           # AR (上書き)
-          python scraper.py --mode search --keyword "AR" --output card_data.csv --csv-mode overwrite --all-pages --headful
+          python scraper.py --mode search --keyword "AR" --output card_data.csv --csv-mode overwrite --all-pages
           # 以下、追記モード
-          python scraper.py --mode search --keyword "CHR" --output card_data.csv --csv-mode append --all-pages --headful
-          python scraper.py --mode search --keyword "SAR" --output card_data.csv --csv-mode append --all-pages --headful
-          python scraper.py --mode search --keyword "SR" --output card_data.csv --csv-mode append --all-pages --headful
-          python scraper.py --mode search --keyword "HR" --output card_data.csv --csv-mode append --all-pages --headful
+          python scraper.py --mode search --keyword "CHR" --output card_data.csv --csv-mode append --all-pages
+          python scraper.py --mode search --keyword "SAR" --output card_data.csv --csv-mode append --all-pages
+          python scraper.py --mode search --keyword "SR" --output card_data.csv --csv-mode append --all-pages
+          python scraper.py --mode search --keyword "HR" --output card_data.csv --csv-mode append --all-pages
 
       - name: Commit and Push
         run: |
