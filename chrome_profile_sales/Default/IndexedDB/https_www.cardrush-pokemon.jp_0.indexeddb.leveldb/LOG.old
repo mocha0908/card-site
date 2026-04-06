@@ -1,0 +1,14 @@
+2026/03/31-06:01:02.038 1b02d5c Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/IndexedDB/https_www.cardrush-pokemon.jp_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/31-06:01:02.039 1b02d5c Recovering log #18
+2026/03/31-06:01:02.039 1b02d5c Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/IndexedDB/https_www.cardrush-pokemon.jp_0.indexeddb.leveldb/000018.log 
+2026/03/31-06:01:02.039 1b02d5c Delete type=2 #16
+2026/03/31-06:01:02.068 1b02d60 Level-0 table #23: started
+2026/03/31-06:01:02.070 1b02d60 Level-0 table #23: 1216 bytes OK
+2026/03/31-06:01:02.073 1b02d60 Delete type=0 #18
+2026/03/31-06:01:02.075 1b02d5c Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x00\x00\x05' @ 190 : 1
+2026/03/31-06:01:02.077 1b02d5c Compacting 1@0 + 1@1 files
+2026/03/31-06:01:02.085 1b02d5c Generated table #24@0: 58 keys, 1421 bytes
+2026/03/31-06:01:02.085 1b02d5c Compacted 1@0 + 1@1 files => 1421 bytes
+2026/03/31-06:01:02.087 1b02d5c compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/03/31-06:01:02.088 1b02d5c Delete type=2 #23
+2026/03/31-06:01:02.088 1b02d5c Manual compaction at level-0 from '\x00\x09\x00\x00\x05' @ 190 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)
