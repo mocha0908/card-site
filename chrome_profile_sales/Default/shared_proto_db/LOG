@@ -1,3 +1,6 @@
-2026/04/07-07:23:58.848 24665c4 Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/shared_proto_db/MANIFEST-000001
-2026/04/07-07:23:58.848 24665c4 Recovering log #4
-2026/04/07-07:23:58.848 24665c4 Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/shared_proto_db/000004.log 
+2026/04/09-06:00:08.405 26ebc31 Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/shared_proto_db/MANIFEST-000001
+2026/04/09-06:00:08.415 26ebc31 Recovering log #4
+2026/04/09-06:00:08.591 26ebc31 Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/shared_proto_db/000004.log 
+2026/04/09-06:01:09.767 26ebc20 Level-0 table #8: started
+2026/04/09-06:01:09.780 26ebc20 Level-0 table #8: 108969 bytes OK
+2026/04/09-06:01:09.788 26ebc20 Delete type=0 #4
