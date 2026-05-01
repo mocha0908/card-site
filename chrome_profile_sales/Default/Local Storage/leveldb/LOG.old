@@ -1,3 +1,6 @@
-2026/04/08-06:00:04.831 25abac7 Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/MANIFEST-000001
-2026/04/08-06:00:04.839 25abac7 Recovering log #49
-2026/04/08-06:00:04.843 25abac7 Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/000049.log 
+2026/05/01-06:00:10.920 4476763 Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/01-06:00:10.938 4476763 Recovering log #97
+2026/05/01-06:00:10.940 4476763 Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/000097.log 
+2026/05/01-06:52:18.831 4476766 Level-0 table #102: started
+2026/05/01-06:52:18.839 4476766 Level-0 table #102: 8972 bytes OK
+2026/05/01-06:52:18.848 4476766 Delete type=0 #97

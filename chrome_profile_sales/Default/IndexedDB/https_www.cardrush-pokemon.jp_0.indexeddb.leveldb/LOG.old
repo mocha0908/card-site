@@ -1,14 +1,14 @@
-2026/03/31-06:01:02.038 1b02d5c Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/IndexedDB/https_www.cardrush-pokemon.jp_0.indexeddb.leveldb/MANIFEST-000001
-2026/03/31-06:01:02.039 1b02d5c Recovering log #18
-2026/03/31-06:01:02.039 1b02d5c Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/IndexedDB/https_www.cardrush-pokemon.jp_0.indexeddb.leveldb/000018.log 
-2026/03/31-06:01:02.039 1b02d5c Delete type=2 #16
-2026/03/31-06:01:02.068 1b02d60 Level-0 table #23: started
-2026/03/31-06:01:02.070 1b02d60 Level-0 table #23: 1216 bytes OK
-2026/03/31-06:01:02.073 1b02d60 Delete type=0 #18
-2026/03/31-06:01:02.075 1b02d5c Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x09\x00\x00\x05' @ 190 : 1
-2026/03/31-06:01:02.077 1b02d5c Compacting 1@0 + 1@1 files
-2026/03/31-06:01:02.085 1b02d5c Generated table #24@0: 58 keys, 1421 bytes
-2026/03/31-06:01:02.085 1b02d5c Compacted 1@0 + 1@1 files => 1421 bytes
-2026/03/31-06:01:02.087 1b02d5c compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/03/31-06:01:02.088 1b02d5c Delete type=2 #23
-2026/03/31-06:01:02.088 1b02d5c Manual compaction at level-0 from '\x00\x09\x00\x00\x05' @ 190 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/04/21-06:01:26.903 37404eb Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/IndexedDB/https_www.cardrush-pokemon.jp_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/21-06:01:26.904 37404eb Recovering log #30
+2026/04/21-06:01:26.905 37404eb Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/IndexedDB/https_www.cardrush-pokemon.jp_0.indexeddb.leveldb/000030.log 
+2026/04/21-06:01:26.905 37404eb Delete type=2 #28
+2026/04/21-06:01:27.035 37404eb Level-0 table #35: started
+2026/04/21-06:01:27.037 37404eb Level-0 table #35: 1291 bytes OK
+2026/04/21-06:01:27.039 37404eb Delete type=0 #30
+2026/04/21-06:01:27.040 37404eb Manual compaction at level-0 from '\x00\x0c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0c\x00\x00\x05' @ 283 : 1
+2026/04/21-06:01:27.040 37404eb Compacting 1@0 + 1@1 files
+2026/04/21-06:01:27.042 37404eb Generated table #36@0: 58 keys, 1465 bytes
+2026/04/21-06:01:27.042 37404eb Compacted 1@0 + 1@1 files => 1465 bytes
+2026/04/21-06:01:27.043 37404eb compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/04/21-06:01:27.043 37404eb Delete type=2 #35
+2026/04/21-06:01:27.045 37404eb Manual compaction at level-0 from '\x00\x0c\x00\x00\x05' @ 283 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at (end)
