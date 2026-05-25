@@ -1,6 +1,15 @@
-2026/05/21-06:00:12.247 16e1c86 Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/MANIFEST-000001
-2026/05/21-06:00:12.275 16e1c86 Recovering log #136
-2026/05/21-06:00:12.278 16e1c86 Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/000136.log 
-2026/05/21-06:40:19.426 16e1c89 Level-0 table #141: started
-2026/05/21-06:40:19.431 16e1c89 Level-0 table #141: 9377 bytes OK
-2026/05/21-06:40:19.436 16e1c89 Delete type=0 #136
+2026/05/26-06:00:08.277 1d3a53b Reusing MANIFEST /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/MANIFEST-000001
+2026/05/26-06:00:08.291 1d3a53b Recovering log #146
+2026/05/26-06:00:08.292 1d3a53b Reusing old log /Users/tcrairai_sub/Desktop/card-site-clean/chrome_profile_sales/Default/Local Storage/leveldb/000146.log 
+2026/05/26-06:18:15.395 1d3a53e Level-0 table #150: started
+2026/05/26-06:18:15.401 1d3a53e Level-0 table #150: 9477 bytes OK
+2026/05/26-06:18:15.407 1d3a53e Delete type=0 #146
+2026/05/26-06:18:15.413 1d3a53e Compacting 4@0 + 1@1 files
+2026/05/26-06:18:15.417 1d3a53e Generated table #151@0: 7 keys, 543 bytes
+2026/05/26-06:18:15.418 1d3a53e Compacted 4@0 + 1@1 files => 543 bytes
+2026/05/26-06:18:15.420 1d3a53e compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/26-06:18:15.422 1d3a53e Delete type=2 #138
+2026/05/26-06:18:15.422 1d3a53e Delete type=2 #141
+2026/05/26-06:18:15.422 1d3a53e Delete type=2 #147
+2026/05/26-06:18:15.422 1d3a53e Delete type=2 #150
+2026/05/26-06:18:15.422 1d3a53e Delete type=2 #144
